@@ -1,7 +1,7 @@
 {
-  "name": "next-google-adsense",
-  "version": "1.0.6",
-  "description": "Next.js Google AdSense",
+  "name": "next-google-adsense-app-router",
+  "version": "1.0.7",
+  "description": "Next.js Google AdSense for app-router",
   "main": "dist/index.js",
   "type": "commonjs",
   "keywords": [
@@ -20,14 +20,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/soranoo/next-google-adsense.git"
+    "url": "git+https://github.com/jayvhaile/next-google-adsense-app-router.git"
   },
-  "author": "soranoo (Freeman)",
+  "author": "JvHaile",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/soranoo/next-google-adsense/issues"
+    "url": "https://github.com/jayvhaile/next-google-adsense-app-router/issues"
   },
-  "homepage": "https://github.com/soranoo/next-google-adsense#readme",
+  "homepage": "https://github.com/jayvhaile/next-google-adsense-app-router#readme",
   "peerDependencies": {
     "next": ">=11.0.0",
     "react": ">=17.0.0"

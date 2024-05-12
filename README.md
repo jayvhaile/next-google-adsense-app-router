@@ -77,23 +77,20 @@ There are two ways to verify your site (of course you can implement both):
 1. AdSense code snippet
 
    ```typescript
-   // pages/_app.tsx
+   // app/layout.tsx
 
    // import the module
    import { GoogleAdSense } from "next-google-adsense";
 
-   const App = ({ Component, pageProps }) => {
-     return (
-       <>
-         <GoogleAdSense publisherId="pub-XXXXXXXXXXXXXXXX" /> {/* 👈 16 digits */}
-         {/* or */}
-         <GoogleAdSense /> {/* if NEXT_PUBLIC_ADSENSE_PUBLISHER_ID is set */}
-         <Component {...pageProps} />
-       </>
-     );
-   };
+   export default function RootLayout({children}: Readonly<{children: React.ReactNode,}>) {
 
-   export default App;
+    return <html>
+                <body>
+                    <GoogleAdSense publisherId="pub-XXXXXXXXXXXXXXXX"/>
+                    {children}
+                </body>
+           </html>
+    }
    ```
     You can also add the `publisherId` as environment variable as `NEXT_PUBLIC_ADSENSE_PUBLISHER_ID`. The environment variable will override the prop if both are set.
 
