@@ -81,7 +81,7 @@ const AdUnit = ({
             }
         >
             {Ad}
-            <Script id="next-google-adsense" strategy="afterInteractive">
+            <Script id="next-google-adsense" strategy="lazyOnload">
                 (window.adsbygoogle = window.adsbygoogle || []).push({});
             </Script>
         </div>

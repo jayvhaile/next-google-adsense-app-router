@@ -35,7 +35,7 @@ const GoogleAdSense = ({
       src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-${_publisherId}${
         debug ? `google_console=1` : ``
       }`}
-      strategy="afterInteractive"
+      strategy="lazyOnload"
     />
   );
 };

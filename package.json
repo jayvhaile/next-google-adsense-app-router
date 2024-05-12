@@ -1,6 +1,6 @@
 {
   "name": "next-google-adsense-app-router",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Next.js Google AdSense for app-router",
   "main": "dist/index.js",
   "type": "commonjs",
